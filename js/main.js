@@ -13,7 +13,7 @@ document.getElementById('my_km').innerHTML = numeroKm;
 const nEta = parseInt(prompt('Inserisci la tua età'));
 document.getElementById('my_age').innerHTML = nEta;
 
-const prezzoKm = parseFloat(0.21);
+const prezzoKm = 0.21;
 
 let totTemp = (numeroKm * prezzoKm).toFixed(2);
 console.log (totTemp)
@@ -24,17 +24,17 @@ let scontoQuaranta = (totTemp - ((totTemp / 100) * 40)).toFixed(2);
 
 
 
-if (nEtà < 18) {
+if (nEta < 18) {
 
     console.log((scontoVenti));
     document.getElementById('my_price').innerHTML = scontoVenti + " (-20%)";
 
-} else if (nEtà >= 65) {
+} else if (nEta >= 65) {
 
     console.log(scontoQuaranta);
     document.getElementById('my_price').innerHTML = scontoQuaranta + " (-40%)";
 
-} else {
+} else  {
     
     console.log (totTemp);
     document.getElementById('my_price').innerHTML = totTemp;
