@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/shinkansen.jpeg');
+    background-size: cover;
+}
+
+.my_train {
+    width: 400px;
+}

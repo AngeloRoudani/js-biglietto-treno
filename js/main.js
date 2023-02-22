@@ -8,8 +8,10 @@
 
 
 const numeroKm = parseInt(prompt('Inserisci i chilometri da percorrere'));
+document.getElementById('my_km').innerHTML = numeroKm;
 
 const nEtà = parseInt(prompt('Inserisci la tua età'));
+document.getElementById('my_age').innerHTML = nEtà;
 
 const prezzoKm = parseFloat(0.21);
 
@@ -23,15 +25,18 @@ let scontoQuaranta = (totTemp - ((totTemp / 100) * 40)).toFixed(2);
 
 
 if (nEtà < 18) {
-    console.log('Il prezzo del biglietto')
+
     console.log((scontoVenti));
+    document.getElementById('my_price').innerHTML = scontoVenti;
 
 } else if (nEtà >= 65) {
 
     console.log(scontoQuaranta);
+    document.getElementById('my_price').innerHTML = scontoQuaranta;
 
 } else if ((nEtà >= 18) || (nEtà < 65)) {
     
     console.log (totTemp);
+    document.getElementById('my_price').innerHTML = totTemp;
 }
 
