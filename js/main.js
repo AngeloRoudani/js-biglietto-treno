@@ -10,8 +10,8 @@
 const numeroKm = parseInt(prompt('Inserisci i chilometri da percorrere'));
 document.getElementById('my_km').innerHTML = numeroKm;
 
-const nEtà = parseInt(prompt('Inserisci la tua età'));
-document.getElementById('my_age').innerHTML = nEtà;
+const nEta = parseInt(prompt('Inserisci la tua età'));
+document.getElementById('my_age').innerHTML = nEta;
 
 const prezzoKm = parseFloat(0.21);
 
@@ -34,7 +34,7 @@ if (nEtà < 18) {
     console.log(scontoQuaranta);
     document.getElementById('my_price').innerHTML = scontoQuaranta + " (-40%)";
 
-} else if ((nEtà >= 18) || (nEtà < 65)) {
+} else {
     
     console.log (totTemp);
     document.getElementById('my_price').innerHTML = totTemp;
