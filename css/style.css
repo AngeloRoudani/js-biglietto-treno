@@ -7,8 +7,10 @@
 body {
     background-image: url('../img/shinkansen.jpeg');
     background-size: cover;
+    font-family: sans-serif;
 }
 
 .my_train {
-    width: 400px;
+    width: 600px;
+    background-color: rgb(192, 132, 248);
 }
