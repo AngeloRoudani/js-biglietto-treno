@@ -18,3 +18,9 @@ body {
 .my_Fcolor {
     color: cornflowerblue;
 }
+
+.my_logo {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(192, 132, 248);
+}

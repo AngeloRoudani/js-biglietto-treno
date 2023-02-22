@@ -27,12 +27,12 @@ let scontoQuaranta = (totTemp - ((totTemp / 100) * 40)).toFixed(2);
 if (nEtà < 18) {
 
     console.log((scontoVenti));
-    document.getElementById('my_price').innerHTML = scontoVenti;
+    document.getElementById('my_price').innerHTML = scontoVenti + " (-20%)";
 
 } else if (nEtà >= 65) {
 
     console.log(scontoQuaranta);
-    document.getElementById('my_price').innerHTML = scontoQuaranta;
+    document.getElementById('my_price').innerHTML = scontoQuaranta + " (-40%)";
 
 } else if ((nEtà >= 18) || (nEtà < 65)) {
     
