@@ -24,3 +24,7 @@ body {
     height: 40px;
     background-color: rgb(192, 132, 248);
 }
+
+.card {
+    color: rgb(39, 38, 38);
+}
